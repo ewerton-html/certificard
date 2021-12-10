@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 
+html {
+  min-height: 100%;
+}
+
 body {
   background: linear-gradient(226.42deg, #3a0e41 8.93%, #09152f 110.98%);
   font-family: "Roboto", sans-serif;
@@ -16,7 +20,18 @@ body {
 
 .cabecalho {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+}
+.foto {
+  max-height: 30%;
+  max-width: 30%;
+}
+
+.foto .perfil-foto {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 460px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .perfil {
@@ -24,14 +39,9 @@ body {
   width: 100%;
 }
 
-.perfil-foto {
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 460px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
 .titulo {
+  display: flex;
+  flex-direction: column;
   margin-left: 16px;
 }
 
@@ -53,19 +63,17 @@ body {
 }
 
 .logo {
-  align-self: flex-end;
+  align-seif: flex-end;
   padding: 4px;
-  border-radius: 8px;
   width: 3em;
 }
-
 .tema {
-  justify-self: flex-end;
-  margin-left: 40%;
+  display: flex;
+  width: 30%;
+  margin-bottom: 200px;
 }
 
 .tema button {
-  justify-self: flex-end;
   font-size: 16px;
   padding: 8px 16px;
   background: #ecf4ff;
@@ -118,6 +126,10 @@ body {
   background-color: #ecf4ff;
   border-radius: 8px;
   padding: 4px;
+}
+
+.dark #linkedin {
+  border-radius: 0px;
 }
 
 .dark .container {
