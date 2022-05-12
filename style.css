@@ -63,7 +63,7 @@ body {
 }
 
 .logo {
-  align-seif: flex-end;
+  align-self: flex-end;
   padding: 4px;
   width: 3em;
 }
